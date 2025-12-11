@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Price List - Fruits and Veggies</title>
+  <title>Order Form - Fruits and Veggies</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,47 +18,34 @@
 
 <hr>
 
-<section class="table-section">
-  <h2>Our Price List</h2>
-  <div class="table-card">
-    <table>
-      <tr>
-        <th>Item</th>
-        <th>Category</th>
-        <th>Price per KG</th>
-        <th>Availability</th>
-</tr>
-      <tr>
-        <td>Apple</td>
-        <td>Fruit</td>
-        <td>Rs. 250</td>
-        <td>In Stock</td>
-      </tr>
-      <tr>
-        <td>Banana</td>
-        <td>Fruit</td>
-        <td>Rs. 120</td>
-        <td>In Stock</td>
-      </tr>
-      <tr>
-        <td>Tomato</td>
-        <td>Vegetable</td>
-        <td>Rs. 90</td>
-        <td>In Stock</td>
-      </tr>
-      <tr>
-        <td>Potato</td>
-        <td>Vegetable</td>
-        <td>Rs. 70</td>
-        <td>In Stock</td>
-      </tr>
-      <tr>
-        <td>Mango</td>
-        <td>Fruit</td>
-        <td>Rs. 300</td>
-        <td>Seasonal</td>
-      </tr>
-    </table>
+<section class="form-section">
+  <h2>Place Your Order</h2>
+  <div class="form-card">
+    <form onsubmit="event.preventDefault(); alert('Thank you! Your order is placed.')">
+      <label>Name:</label>
+      <input type="text" placeholder="Enter your name" required><br><br>
+
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your email" required><br><br>
+
+      <label>Select Item:</label>
+      <select>
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Tomato</option>
+        <option>Potato</option>
+        <option>Mango</option>
+      </select><br><br>
+
+      <label>Delivery Option:</label><br>
+      <input type="radio" name="delivery"> Pickup<br>
+      <input type="radio" name="delivery"> Home Delivery<br><br>
+
+      <label>Quantity (KG):</label>
+      <input type="number" min="1"><br><br>
+
+      <button type="submit">Order Now</button>
+    </form>
   </div>
 </section>
 
