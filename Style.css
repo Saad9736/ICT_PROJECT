@@ -1,0 +1,131 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f7fff7;
+    color: #333;
+}
+
+/* Header */
+.sticky-header {
+    background: white;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+nav a {
+    margin: 12px;
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #006400;
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 80px;
+    background: linear-gradient(#c8ffc8, #ffffff);
+}
+
+.hero button {
+    background: #00aa00;
+    color: white;
+    font-size: 18px;
+    padding: 12px 26px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero button:hover {
+    background: darkgreen;
+    transform: scale(1.05);
+}
+
+/* Cards */
+.cards, .team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.card, .team-card {
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card img, .team-card img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.card:hover img, .team-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Table */
+.table-section table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #e6ffe6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.table-section th, .table-section td {
+    padding: 12px;
+    text-align: center;
+}
+
+.table-section tr:hover {
+    background: #ccffcc;
+}
+
+/* Form */
+.form-card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-card input, .form-card select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.form-card button {
+    background: green;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.form-card button:hover {
+    background: darkgreen;
+    transform: scale(1.05);
+}
