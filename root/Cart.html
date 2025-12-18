@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Order Form - Fruits and Veggies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="sticky-header">
+    <h1>Fruits & Veggies</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Price.html">Prices</a>
+      <a href="Cart.html">Order</a>
+      <a href="About us.html">About</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <section class="form-section">
+    <h2>Place Your Order</h2>
+    <div class="form-card">
+      <form onsubmit="event.preventDefault(); alert('Thank you! Your order is placed.')">
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required><br><br>
+
+        <label>Select Item:</label>
+        <select>
+          <option>Apple</option>
+          <option>Banana</option>
+          <option>Tomato</option>
+          <option>Potato</option>
+          <option>Mango</option>
+        </select><br><br>
+
+        <label>Delivery Option:</label><br>
+        <input type="radio" name="delivery"> Pickup<br>
+        <input type="radio" name="delivery"> Home Delivery<br><br>
+
+        <label>Quantity (KG):</label>
+        <input type="number" min="1"><br><br>
+
+        <button type="submit">Order Now</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>
